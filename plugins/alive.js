@@ -64,13 +64,19 @@ Module({
   let cmdmenu = final.trim();
   var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
 ┃${star}╭──────────────
-┃${star}│
-┃${star}│ _*Owner*_ : ${BOT_INFO.split(";")[1]}
-┃${star}│ _*User*_ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
-┃${star}│ _*Mode*_ : ${MODE}
-┃${star}│ _*Server*_ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
-┃${star}│ _*Available RAM*_ : ${used} of ${total}
-┃${star}│ _*Version*_ : ${config.VERSION}
+┃${star}| 
+┃${star}|   
+┃${star}| ██████████████████████████████
+┃${star}| █▄─▄▄─█▄─▄▄▀█▄─▄▄▀█─▄▄─█▄─▄▄▀█
+┃${star}| ██─▄█▀██─▄─▄██─▄─▄█─██─██─▄─▄█
+┃${star}| ▀▄▄▄▄▄▀▄▄▀▄▄▀▄▄▀▄▄▀▄▄▄▄▀▄▄▀▄▄▀
+┃${star}|
+┃${star}│ ⚠️*Owner*⚠️ : ${BOT_INFO.split(";")[1]}
+┃${star}│ ⚠️*User*⚠️ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
+┃${star}│ ⚠️*Mode*⚠️ : ${MODE}
+┃${star}│ ⚠️*Server*⚠️ : ${__dirname.startsWith('/skl')?"Heroku":"Private (VPS)"}
+┃${star}│ ⚠️*Available RAM*⚠️ : ${used} of ${total}
+┃${star}│ ⚠️*Version*⚠️ : ${config.VERSION}
 ┃${star}│
 ┃${star}│
 ┃${star}│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
@@ -84,7 +90,7 @@ ${cmdmenu}`
 try {
   var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`)
 } catch (error) {
-  var _img = await skbuffer(`https://i.imgur.com/B2YWSLk.jpg`)
+  var _img = await skbuffer(`https://telegra.ph/file/3c95155e7ea2936d2daac.jpg`)
 }
 return await message.client.sendMessage(message.jid,{
   image: await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`),
