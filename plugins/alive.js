@@ -7,7 +7,7 @@ const {
   FancyRandom,
   getListFromCommand,
   skbuffer
-} = require("raganork-bot");
+} = require("Bot Savage");
 const {
   Module,
   commands
@@ -28,7 +28,7 @@ Module({
   pattern: 'menu',
   fromMe: w,
   use: 'utility',
-  desc: 'Is bot alive?'
+  desc: 'Is bot savage alive??'
 }, (async (message, match) => {
   var myid = message.client.user.id.split(":")[0]
   const stars = ['✦','✯','✯','✰','◬','✵'];
@@ -64,14 +64,9 @@ Module({
   let cmdmenu = final.trim();
   var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
 ┃${star}╭──────────────
-┃${star}| I'm always alive to serve my master sir ✨Mirai✨
-┃${star}|   
-┃${star}|  ______     __  __     __     __   __    
-┃${star}│☠️/\  ___\   /\ \_\ \   /\ \   /\ "-.\ \☠️   
-┃${star}│☠️\ \___  \  \ \  __ \  \ \ \  \ \ \-.  \☠️  
-┃${star}│ ☠️\/\_____\  \ \_\ \_\  \ \_\  \ \_\\"\_\☠️ 
-┃${star}│  ☠️\/_____/   \/_/\/_/   \/_/   \/_/ \/_/ ☠️
-┃${star}│✨𝔹𝕪 𝕄𝕚𝕣𝕒𝕚 𝕗𝕠𝕩✨                               
+┃${star}| I'm always alive to serve my King and queen 👑
+┃${star}|     
+┃${star}│👑by king savage🧎‍♂️👑                             
 ┃${star}│ *Owner*⚠️ : ${BOT_INFO.split(";")[1]}
 ┃${star}│ *User*⚠️ : ${message.senderName.replace( /[\r\n]+/gm, "" )}
 ┃${star}│ *Mode*⚠️ : ${MODE}
@@ -91,7 +86,7 @@ ${cmdmenu}`
 try {
   var _img = await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`)
 } catch (error) {
-  var _img = await skbuffer(`https://telegra.ph/file/3c95155e7ea2936d2daac.jpg`)
+  var _img = await skbuffer(`https://telegra.ph/file/b67846946c75c93115a2c.jpg`)
 }
 return await message.client.sendMessage(message.jid,{
   image: await skbuffer(BOT_INFO.split(";")[3]||`https://picsum.photos/800/500`),
