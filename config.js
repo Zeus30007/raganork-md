@@ -16,7 +16,7 @@ const settingsMenu = [
     {title: "Admin sudo acces mode (group commands only)", env_var: "ADMIN_ACCESS"},
     {title: "With & without handler mode", env_var: "MULTI_HANDLERS"},
     {title: "Auto reject calls", env_var: "REJECT_CALLS"},
-    {title: "Always online", env_var: "ALWAYS_ONLINE"},
+    {title: "I'm Lord Mythic's shadow", env_var: "ALWAYS_ONLINE"},
     {title: "PM Auto blocker", env_var: "PMB_VAR"},
     {title: "Disable bot in PM", env_var: "DIS_PM"}
   ]
@@ -25,7 +25,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
     VERSION: 'v4.0.0',
-    ALIVE: process.env.ALIVE || "https://telegra.ph/file/b67846946c75c93115a2c.jpg i am always alive to serve the true savages, Sir/Ma'am {sender}, 🧎‍♂️\n Uptime: {uptime}",
+    ALIVE: process.env.ALIVE || "https://telegra.ph/file/b67846946c75c93115a2c.jpg i am always alive to serve Mythic sir/ma'am {sender}, 🧎‍♂️\n Uptime: {uptime}",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
@@ -50,7 +50,7 @@ module.exports = {
     READ_COMMAND: convertToBool(process.env.READ_COMMAND) || true,
     SESSION: (process.env.SESSION || process.env.SESSION_ID || 'Raganork~54bb5e9ce79cf8637d8cabe43f6e8770:6262624f483438717847733d').trim() || 'Raganork~54bb5e9ce79cf8637d8cabe43f6e8770:6262624f483438717847733d',
     IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f", "deb80cd12ababea1c9b9a8ad6ce3fab2", "78c84c62b32a88e86daf87dd509a657a"],
-    RG: process.env.RG || '6797309646,260767611710',
+    RG: process.env.RG || '27618049601',
     BOT_INFO: process.env.BOT_INFO || 'Bot savage;king savage;0;https://telegra.ph/file/b67846946c75c93115a2c.jpg',
     RBG_KEY: process.env.RBG_KEY || '',
     ALLOWED: process.env.ALLOWED || '91,94,2',
@@ -58,7 +58,7 @@ module.exports = {
     CHATBOT: process.env.CHATBOT || 'off',
     HANDLERS: process.env.HANDLERS || '.,',
     STICKER_DATA: process.env.STICKER_DATA || "Savage Family",
-    BOT_NAME: process.env.BOT_NAME || 'Bot Savage',
+    BOT_NAME: process.env.BOT_NAME || 'Mythics shadow,
     AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "punlic" ? 'King Savage;Bot Savage;https://telegra.ph/file/b67846946c75c93115a2c.jpg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
     MODE: process.env.MODE || 'public',
